@@ -6,28 +6,235 @@
 <style>
 body,div,dl,dt,dd,th,td,ul,ol,li,h1,h2,h3,h4,h5,h6,fieldset,p,blockquote,button,input,textarea{margin:0;padding:0;}
 hr,legend {display:none;}img,fieldset{border:0 none;}
+ul,ol,li{list-style:none outside;}table {border-collapse:collapse;}.hidden{display:none !important;}em{font-style:normal}
 body,div,p,h1,h2,h3,h4,h5,dl,dt,dd,th,td,a,form,fieldset,legend,input{font-weight:normal;font-family:sans-serif;color:#555;}
+a:link,a:visited,a:active{text-decoration: none;color: #777;}a:hover{text-decoration:none;color:#777;}
+
+#wrap{text-align:center}
+#header{padding:100px 0}
+#header h1{font-size:200%;font-weight:bold}
+#footer{padding:100px 0}
 
 
+.worldMap{position:relative;display:inline-block;width:1400px;height:700px;background:url("map01.jpg") no-repeat center top}
 
+.countries li a{position:absolute;top:0;left:0;width:200px;height:200px;border:1px solid #000;border-radius:50%;background:#FFF}
+.countries .japan a{position:absolute;top:200px;left:600px}
+.countries .singapore a{position:absolute;top:420px;left:400px;width:160px;height:160px;}
+.countries .usa a{position:absolute;top:110px;left:930px}
+.countries .germany a{position:absolute;top:120px;left:0}
+.countries .india a{position:absolute;top:400px;left:230px;width:160px;height:160px;}
+.countries .vietnam a{position:absolute;top:260px;left:350px;width:160px;height:160px;}
+.countries .austrailia a{position:absolute;top:470px;left:630px;}
+
+
+.countries li .flag{display:inline-block;margin:20px 0 5px 0;border:1px solid #000;padding:10px}
+.countries li h4{font-size:150%}
+
+.worldMap .detail_info{position:absolute;top:-50px;left:100px;padding:30px 0;width:1200px;background:#FFF;border:1px solid #000;border-radius:10px;display:none}
+
+
+.worldMap .detail_info li{display:inline-block;margin:20px 0;width:200px;height:120px;border:1px solid #000}
+.worldMap .detail_info .logo{display:inline-block;margin:10px 0 0 0;border:1px solid #000;padding:5px}
+.worldMap .detail_info h3{padding:130px 0 0 0;background:url("map_japan_01.jpg") no-repeat center top;font-size:150%}
+.worldMap .detail_info h4{font-size:150%}
+.worldMap .detail_info .closeLayer{position:absolute;top:-100px;right:0;width:100px;height:100px;text-indent:-9999em;}
+.worldMap .detail_info .closeLayer:before{content:"";position:absolute;top:70px;right:0;width:80px;height:1px;background:#000;transform: rotate(45deg);}
+.worldMap .detail_info .closeLayer:after{content:"";position:absolute;top:70px;right:0;width:80px;height:1px;background:#000;transform: rotate(-45deg);}
 
 </style>
 </head>
 
 <body>
-<div class="wrap">
-	<div class="header">
-		<h1>TQOON GLOBAL</h1>
-	</div>
-	<div class="contents">
-
-1234
-
-
-	</div>
-    <div class="footer">
-		<p>Copyright ©Tqoon Global All Rights Reserved.</p>
-	</div>
+<div id="wrap">
+<div id="header">
+	<h1>TQOON GLOBAL</h1>
 </div>
+<div id="contents">
+
+	<div class="worldMap">
+
+		<ul class="countries">
+			<li class="japan">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>JAPAN</h4>
+					<p>24 shopping mall</p>
+					<p>2017년 매출 190억</p>
+				</a>
+			</li>
+			<li class="singapore">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>SINGAPORE</h4>
+					<p>1 shopping mall</p>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+			<li class="usa">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>USA</h4>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+			<li class="germany">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>GERMERNY</h4>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+			<li class="india">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>INDIA</h4>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+			<li class="vietnam">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>VIETNAM</h4>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+			<li class="austrailia">
+				<a href="#">
+					<span class="flag">FLAG</span>
+					<h4>AUSTRAILIA</h4>
+					<p>2018년 진출</p>
+				</a>
+			</li>
+		</ul>
+
+		<div class="detail_info">
+			<h3>JAPAN</h3>
+			<ul>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>adprint.jp</h4>
+					<p>명함,홍보물</p>
+					<p>2017년 매출액 50억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>makumaku.jp</h4>
+					<p>배너,깃발</p>
+					<p>2017년 매출액 20억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 03</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 04</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 05</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+		
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+				<li>
+					<span class="logo">LOGO</span>
+					<h4>site 00</h4>
+					<p>주요품목</p>
+					<p>2017년 매출액 10억</p>
+				</li>
+			</ul>
+			<a class="closeLayer" href="#">close</a>
+		</div>
+
+	</div>
+
+
+</div>
+<div id="footer">
+	<p>Copyright ©Tqoon Global All Rights Reserved.</p>
+</div>
+</div>
+
+<script src="http://crosslesson.com/js/lib/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".worldMap")
+		.on("click",".countries a",function(e){
+			e.preventDefault();
+
+			$(".worldMap .detail_info").show();
+		});
+
+	$("#contents")
+		.on("click",".closeLayer",function(e){
+			e.preventDefault();
+
+			$(this).parent().hide();
+		});
+
+
+});
+</script>
 </body>
 </html>
+
